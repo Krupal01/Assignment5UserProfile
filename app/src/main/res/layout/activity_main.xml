@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:padding="2dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/personal_details"
+                android:textSize="25dp"
+                android:id="@+id/sec1"
+                android:layout_marginBottom="@dimen/marginBottom"
+                app:drawableLeftCompat="@drawable/ic_baseline_assignment_ind_24" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sec1"
+                android:id="@+id/etfName"
+                app:startIconDrawable="@drawable/ic_baseline_person_24"
+                android:layout_marginBottom="@dimen/marginBottom">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/name"
+                    android:inputType="text"
+                    android:textSize="@dimen/textSize" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etfName"
+                android:id="@+id/etfPhone"
+                app:startIconDrawable="@drawable/ic_baseline_local_phone_24"
+                android:layout_marginBottom="@dimen/marginBottom">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/phone_no"
+                    android:inputType="phone"
+                    android:textSize="@dimen/textSize" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etfPhone"
+                android:id="@+id/etfMail"
+                app:startIconDrawable="@drawable/ic_baseline_alternate_email_24"
+                android:layout_marginBottom="@dimen/marginBottom">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etMail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/e_mail"
+                    android:inputType="textEmailAddress"
+                    android:textSize="@dimen/textSize" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etfMail"
+                android:id="@+id/etfContry"
+                app:startIconDrawable="@drawable/ic_baseline_flag_24"
+                android:layout_marginBottom="@dimen/marginBottom">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etContry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/contry"
+                    android:inputType="text"
+                    android:textSize="@dimen/textSize" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etfContry"
+                android:id="@+id/etfAddress"
+                app:startIconDrawable="@drawable/ic_baseline_home_24"
+                android:layout_marginBottom="@dimen/marginBottom">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/address"
+                    android:inputType="text"
+                    android:textSize="@dimen/textSize" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gender"
+                android:id="@+id/tvGender"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/etfAddress"
+                app:drawableLeftCompat="@drawable/ic_baseline_supervised_user_circle_24" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etfAddress"
+                android:layout_toRightOf="@+id/tvGender"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="@dimen/marginBottom"
+                android:orientation="horizontal"
+                android:id="@+id/rgGender"
+                android:paddingRight="10dp">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rbMale"
+                    android:text="@string/male"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rbFemale"
+                    android:text="@string/female"/>
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btnDOB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rgGender"
+                android:drawableLeft="@drawable/ic_baseline_cake_24"
+                android:layout_marginBottom="@dimen/marginBottom"
+                android:text="select DOB"
+                android:textSize="@dimen/textSize" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnDOB"
+                android:id="@+id/etfHobby"
+                app:startIconDrawable="@drawable/ic_baseline_architecture_24"
+                android:layout_marginBottom="@dimen/marginBottom">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etHobby"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hobby"
+                    android:inputType="text"
+                    android:textSize="@dimen/textSize" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/education_details"
+                android:textSize="25dp"
+                android:id="@+id/sec2"
+                android:layout_below="@+id/etfHobby"
+                android:layout_marginVertical="@dimen/marginBottom"
+                app:drawableLeftCompat="@drawable/ic_baseline_school_24" />
+
+            <Spinner
+                android:id="@+id/spSchool"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/sec2"
+                android:layout_marginBottom="@dimen/marginBottom" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/percentaga"
+                android:id="@+id/tvPercentage"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/spSchool"
+                android:layout_below="@+id/sec2"/>
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/seekSchool"
+                android:layout_below="@+id/spSchool"
+                android:max="100"/>
+
+            <Spinner
+                android:id="@+id/spCollege"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="@dimen/marginBottom"
+                android:layout_below="@+id/seekSchool"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cgpa_cpa"
+                android:id="@+id/tvCGPA"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/spCollege"
+                android:layout_below="@+id/seekSchool"/>
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/seekCollege"
+                android:layout_below="@+id/spCollege"
+                android:max="10"/>
+
+            <Button
+                android:id="@+id/btnSignIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/seekCollege"
+                android:layout_marginBottom="@dimen/marginBottom"
+                android:text="@string/sign_in"
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/textSize"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

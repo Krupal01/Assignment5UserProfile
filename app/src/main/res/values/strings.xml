@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">UserProfile</string>
+    <string name="personal_details">Personal Details :</string>
+    <string name="name">Name</string>
+    <string name="phone_no">Phone No.</string>
+    <string name="e_mail">E-mail</string>
+    <string name="contry">Contry</string>
+    <string name="address">Address</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="hobby">Hobby</string>
+    <string name="education_details">Education Details :</string>
+    <string name="percentaga">Percentaga(%) :</string>
+    <string name="cgpa_cpa">CGPA/CPA :</string>
+    <string name="sign_in">Sign in</string>
+    <dimen name="textSize">15dp</dimen>
+    <dimen name="marginBottom">5dp</dimen>
+</resources>
