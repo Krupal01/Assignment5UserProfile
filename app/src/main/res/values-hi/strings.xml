@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">UserProfile</string>
+    <string name="personal_details">व्यक्तिगत विवरण :</string>
+    <string name="name">नाम</string>
+    <string name="phone_no">फोन नंबर।</string>
+    <string name="e_mail">ईमेल</string>
+    <string name="contry">कॉन्ट्री</string>
+    <string name="address">पता</string>
+    <string name="gender">लिंग</string>
+    <string name="male">पुरुष</string>
+    <string name="female">महिला</string>
+    <string name="hobby">शौक</string>
+    <string name="education_details">शिक्षा विवरण :</string>
+    <string name="percentaga">प्रतिशत (%) :</string>
+    <string name="cgpa_cpa">CGPA/CPA :</string>
+    <string name="sign_in">साइन इन करें</string>
+    <dimen name="textSize">15dp</dimen>
+    <dimen name="marginBottom">5dp</dimen>
+
+</resources>
